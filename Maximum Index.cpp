@@ -52,7 +52,7 @@ void solve() {
 	int i = 0 , j = 0 , ans = 0;
 
 	while(i < n && j < n) {
-		if(prf[i] < sff[j]) {
+		if(prf[i] <= sff[j]) {
 			ans = max(j - i , ans);
 			j += 1;
 		} else {
